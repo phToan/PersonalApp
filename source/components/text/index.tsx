@@ -19,6 +19,7 @@ interface CustomTextProps extends TextProps {
     | '900';
   backgroundColor?: string;
   textColor?: string;
+  textAlign?: 'auto' | 'left' | 'right' | 'center' | 'justify' | undefined;
 }
 
 const fontFamily =
@@ -29,12 +30,16 @@ export const CustomText: React.FC<CustomTextProps> = ({
   fontSize = 14,
   fontWeight = 'normal',
   textColor = color.black[1],
+  textAlign = 'auto',
   children,
   ...props
 }) => {
   return (
     <Text
-      style={[{fontSize, fontWeight, color: textColor, fontFamily}, style]}
+      style={[
+        {fontSize, fontWeight, color: textColor, fontFamily, textAlign},
+        style,
+      ]}
       {...props}>
       {children}
     </Text>
@@ -46,12 +51,19 @@ export const TinyText = ({
   textColor = color.black[1],
   style,
   children,
+  textAlign = 'auto',
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.tiny, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.tiny,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>
@@ -64,13 +76,20 @@ export const SmallText = ({
   fontWeight,
   textColor = color.black[1],
   style,
+  textAlign = 'auto',
   children,
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.small, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.small,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>
@@ -83,13 +102,20 @@ export const NormalText = ({
   fontWeight,
   textColor = color.black[1],
   style,
+  textAlign = 'auto',
   children,
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.normal, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.normal,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>
@@ -102,13 +128,20 @@ export const MediumText = ({
   fontWeight,
   textColor = color.black[1],
   style,
+  textAlign = 'auto',
   children,
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.medium, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.medium,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>
@@ -121,13 +154,20 @@ export const LargeText = ({
   fontWeight,
   textColor = color.black[1],
   style,
+  textAlign = 'auto',
   children,
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.large, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.large,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>
@@ -140,13 +180,20 @@ export const HugeText = ({
   fontWeight,
   textColor = color.black[1],
   style,
+  textAlign = 'auto',
   children,
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.huge, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.huge,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>
@@ -159,13 +206,20 @@ export const BigText = ({
   fontWeight,
   textColor = color.black[1],
   style,
+  textAlign = 'auto',
   children,
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.big, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.big,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>
@@ -178,13 +232,20 @@ export const GigText = ({
   fontWeight,
   textColor = color.black[1],
   style,
+  textAlign = 'auto',
   children,
   ...props
 }: CustomTextProps) => {
   return (
     <Text
       style={[
-        {fontSize: size.gigantic, fontWeight, color: textColor, fontFamily},
+        {
+          fontSize: size.gigantic,
+          fontWeight,
+          color: textColor,
+          fontFamily,
+          textAlign,
+        },
         style,
       ]}
       {...props}>

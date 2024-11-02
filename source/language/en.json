@@ -4,6 +4,11 @@
   },
   "Login": {
     "Login": "Login",
-    "ser": "ser"
+    "GetStarted": "Let’s Get Started 😁",
+    "SignupOrLogin": "Sign up or login into to have a full digital experience in our restaurant",
+    "Started": "Get Started",
+    "ContinueFacebook": "Continue with Facebook",
+    "ContinueGmail": "Continue with Gmail",
+    "SignUpLater": "Sign up later"
   }
 }

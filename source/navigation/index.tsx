@@ -47,8 +47,8 @@ function StackNavigator() {
   return (
     <NavigationContainer>
       <MainStack.Navigator screenOptions={{headerShown: false}}>
-        <MainStack.Screen name="HomeScreen" component={HomeScreen} />
         <MainStack.Screen name="LoginScreen" component={LoginScreen} />
+        <MainStack.Screen name="HomeScreen" component={HomeScreen} />
       </MainStack.Navigator>
     </NavigationContainer>
   );

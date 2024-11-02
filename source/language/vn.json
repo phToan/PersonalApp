@@ -3,7 +3,12 @@
     "Welcome": "xin chao"
   },
   "Login": {
-    "Login": "dang nhap",
-    "ser": "se"
+    "Login": "Đăng nhập",
+    "GetStarted": "Hãy Bắt đầu nào 😁",
+    "SignupOrLogin": "Đăng ký hoặc đăng nhập để có trải nghiệm số đầy đủ tại nhà hàng của chúng tôi.",
+    "Started": "Bắt đầu",
+    "ContinueFacebook": "Tiếp tục với Facebook",
+    "ContinueGmail": "Tiếp tục với Gmail",
+    "SignUpLater": "Đăng ký"
   }
 }

@@ -21,4 +21,8 @@ export const color = {
   neutral: {
     1: '#615793',
   },
+  gray: {
+    1: '#DCDCE4',
+    2: '#A5A5BA',
+  },
 };
